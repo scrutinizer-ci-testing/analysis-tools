@@ -5,7 +5,7 @@ build:
     tests:
         override:
             -
-                command: 'eslint-run ./ -c ./eslintrc.json > eslint-data' 
+                command: 'eslint-run ./ -c ./eslint/eslintrc.json > eslint-data' 
                 analysis:
                     file: 'eslint-data'                 # The output filename
                     format: 'eslint-checkstyle'     # The supported format by Scrutinizer
