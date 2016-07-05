@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<checkstyle version='4.3'>
+<file name='./shellcheck&#45;data' >
+<error line='1' column='1' severity='warning' message='Couldn&#39;t read any commands.' source='ShellCheck.SC1014' />
+</file>
+<file name='./PingAll2.sh' >
+<error line='8' column='22' severity='info' message='Double quote to prevent globbing and word splitting.' source='ShellCheck.SC2086' />
+<error line='15' column='11' severity='info' message='Use &#36;&#40;&#40;..&#41;&#41; instead of deprecated &#36;&#91;..&#93;' source='ShellCheck.SC2007' />
+<error line='15' column='13' severity='info' message='&#36; on variables in &#40;&#40; &#41;&#41; is unnecessary.' source='ShellCheck.SC2004' />
+</file>
+<file name='./menu/function.sh' >
+</file>
+<file name='./menu/log.txt' >
+</file>
+<file name='./menu/select&#95;menu.sh' >
+</file>
+<file name='./menu/test.txt' >
+</file>
+<file name='./menu/dialog&#95;menu.bsh' >
+</file>
+</checkstyle>

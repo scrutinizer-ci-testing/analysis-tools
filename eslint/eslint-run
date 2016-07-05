@@ -1,0 +1,19 @@
+#!/bin/bash
+
+COMMAND=$(which eslint)
+
+if [ -f ./node_modules/.bin/eslint ]; then
+    COMMAND=./node_modules/.bin/eslint
+fi
+
+if [ -f /tmp/analysis_result_eslint ]; then
+    rm /tmp/analysis_result_eslint
+fi
+
+echo "Running $COMMAND --format checkstyle $@">&2
+
+$COMMAND --debug --color --output-file=/tmp/analysis_result_eslint "$@" >&2
+
+cat /tmp/analysis_result_eslint
+
+rm /tmp/analysis_result_eslint

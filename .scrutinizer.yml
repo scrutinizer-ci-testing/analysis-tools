@@ -1,0 +1,28 @@
+checks:
+    javascript: true
+    php: true
+build:
+    tests:
+        override:
+            -
+                command: 'eslint-run ./ -c ./eslintrc.json > eslint-data' 
+                analysis:
+                    file: 'eslint-data'                 # The output filename
+                    format: 'eslint-checkstyle'     # The supported format by Scrutinizer
+
+build:
+    tests:
+        override:
+            -
+                command:   'shellcheck-run > shellcheck-data' 
+                analysis:
+                    file:   'shellcheck-data' 
+                    format: 'general-checkstyle'
+build:
+    tests:
+        override:
+            -
+                command: 'phpcs-run ./ --standard=./phpcs/ruleset.xml > phpcs-data'
+                analysis:
+                    file: 'phpcs-data'            # The reporter filename
+                    format: 'php-cs-checkstyle'
