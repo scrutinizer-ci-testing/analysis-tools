@@ -2,6 +2,9 @@ checks:
     javascript: true
     php: true
 build:
+    environment:
+        node: v6.2.0
+
     tests:
         override:
             -
