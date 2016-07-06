@@ -10,7 +10,7 @@ build:
                     file: 'eslint-data'                
                     format: 'eslint-checkstyle'    
 
-	    -	
+            -
                 command: 'eslint-run ./ -c ./eslint/eslintrc.json' 
                 analysis:                
                     format: 'eslint-checkstyle'
@@ -20,8 +20,8 @@ build:
                 analysis:
                     file:   'shellcheck-data' 
                     format: 'general-checkstyle'
-	
-	    -
+
+            -
                 command: 'phpcs-run ./' 
                 analysis:                
                     format: 'eslint-checkstyle'
