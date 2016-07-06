@@ -7,17 +7,27 @@ build:
             -
                 command: 'eslint-run ./ -c ./eslint/eslintrc.json > eslint-data' 
                 analysis:
-                    file: 'eslint-data'                 # The output filename
-                    format: 'eslint-checkstyle'     # The supported format by Scrutinizer
+                    file: 'eslint-data'                
+                    format: 'eslint-checkstyle'    
+
+	    -	
+                command: 'eslint-run ./' 
+                analysis:                
+                    format: 'eslint-checkstyle'
 
             -
                 command:   'shellcheck-run > shellcheck-data' 
                 analysis:
                     file:   'shellcheck-data' 
                     format: 'general-checkstyle'
+	
+	    -
+                command: 'phpcs-run ./' 
+                analysis:                
+                    format: 'eslint-checkstyle'
 
             -
                 command: 'phpcs-run ./ --standard=./phpcs/ruleset.xml > phpcs-data'
                 analysis:
-                    file: 'phpcs-data'            # The reporter filename
+                    file: 'phpcs-data'           
                     format: 'php-cs-checkstyle'
