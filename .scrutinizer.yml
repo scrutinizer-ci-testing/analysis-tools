@@ -11,7 +11,7 @@ build:
                     format: 'eslint-checkstyle'    
 
 	    -	
-                command: 'eslint-run ./' 
+                command: 'eslint-run ./ -c ./eslint/eslintrc.json' 
                 analysis:                
                     format: 'eslint-checkstyle'
 
