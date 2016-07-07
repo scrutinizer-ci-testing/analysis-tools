@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -e
+
+if [ -f ./node_modules/.bin/jshint ]; then
+    COMMAND=./node_modules/.bin/jshint
+else
+    if [ ! -f ~/.analysis/jshint/node_modules/.bin/jshint ]; then
+        echo "No project installation of jshint found, installing jshint... " >&2
+        npm install --prefix ~/.analysis/jshint jshint >&2
+    fi
+
+    COMMAND=~/.analysis/jshint/node_modules/.bin/jshint
+fi
+
+echo "Running $COMMAND $@">&2
+
+$COMMAND --checkstyle-reporter "$@"  || true

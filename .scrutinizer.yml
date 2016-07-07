@@ -34,3 +34,14 @@ build:
                 analysis:
                     file: 'phpcs-data'           
                     format: 'php-cs-checkstyle'
+
+            -
+                command: 'jshint-run ./'
+                analysis:
+                    format: 'jshint-checkstyle'
+
+            -
+                command: 'jshint-run ./ --reporter=reporter.js > jshint-data'
+                analysis:
+                    file: 'jshint-data'
+                    format: 'php-cs-checkstyle'
