@@ -1,20 +1,24 @@
 checks:
     javascript: true
     php: true
+    python: true
+    ruby: true
 build:
     environment:
         node: v6.2.0
+        python: 3.5.0
+        ruby: 2.0.0
 
     tests:
         override:
             -
-                command: 'eslint-run ./ -c ./eslint/eslintrc.json > eslint-data' 
+                command: 'eslint-run ./eslint -c ./eslint/eslintrc.json > eslint-data'  #path required
                 analysis:
                     file: 'eslint-data'                
                     format: 'eslint-checkstyle'    
 
             -
-                command: 'eslint-run ./ -c ./eslint/eslintrc.json' 
+                command: 'eslint-run ./eslint -c ./eslint/eslintrc.json'   #path required
                 analysis:                
                     format: 'eslint-checkstyle'
 
@@ -25,23 +29,45 @@ build:
                     format: 'general-checkstyle'
 
             -
-                command: 'phpcs-run ./' 
+                command: 'phpcs-run ./phpcs'     #path required
                 analysis:                
                     format: 'eslint-checkstyle'
 
             -
-                command: 'phpcs-run ./ --standard=./phpcs/ruleset.xml > phpcs-data'
+                command: 'phpcs-run ./phpcs --standard=./phpcs/ruleset.xml > phpcs-data' #path required
                 analysis:
                     file: 'phpcs-data'           
                     format: 'php-cs-checkstyle'
 
             -
-                command: 'jshint-run ./'
+                command: 'jshint-run ./jshint'
                 analysis:
                     format: 'jshint-checkstyle'
 
             -
-                command: 'jshint-run ./ --reporter=reporter.js > jshint-data'
+                command: 'jshint-run ./jshint --reporter=./jshint/reporter.js > jshint-data'
                 analysis:
                     file: 'jshint-data'
-                    format: 'php-cs-checkstyle'
+                    format: 'jshint-checkstyle'
+
+            -
+                command: 'pylint-run ./pylint'
+                analysis:
+                     format: 'pylint-parseable'
+
+            -
+                command: 'pylint-run ./pylint --rcfile=./pylint/.pylintrc > pylint-data'
+                analysis:
+                     file: 'pylint-data'
+                     format: 'pylint-parseable'
+
+            -
+                command: 'rubocop-run ./rubocop'
+                analysis:
+                     format: 'rubocop-json'
+
+            -
+                command: 'rubocop-run ./rubocop --config=./rubocop/.rubocop.yml > rubocop-data'
+                analysis:
+                     file: 'rubocop-data'
+                     format: 'rubocop-json'
