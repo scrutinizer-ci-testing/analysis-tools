@@ -7,7 +7,7 @@ build:
     environment:
         node: v6.2.0
         python: 3.5.0
-        ruby: 2.0.0
+        ruby: 1.9.3-p448
 
     tests:
         override:
