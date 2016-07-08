@@ -12,13 +12,13 @@ build:
     tests:
         override:
             -
-                command: 'eslint-run ./eslint -c ./eslint/eslintrc.json > eslint-data'  #path required
+                command: 'eslint-run ./eslint/lib -c ./eslint/eslintrc.json > eslint-data'  #path required
                 analysis:
                     file: 'eslint-data'                
                     format: 'eslint-checkstyle'    
 
             -
-                command: 'eslint-run ./eslint -c ./eslint/eslintrc.json'   #path required
+                command: 'eslint-run ./eslint/lib -c ./eslint/eslintrc.json'   #path required
                 analysis:                
                     format: 'eslint-checkstyle'
 
