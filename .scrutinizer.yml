@@ -1,8 +1,8 @@
 checks:
     javascript: true
     php: true
-    python: true
-    ruby: true
+    #python: true
+    #ruby: true
 build:
     environment:
         node: v6.2.0
