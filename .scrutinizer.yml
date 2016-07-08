@@ -57,12 +57,12 @@ build:
                     format: 'jshint-checkstyle'
 
             -
-                command: 'pylint-run ./pylint'
+                command: 'pylint-run ./pylint/custom.py' # either project name or specfic file name
                 analysis:
                      format: 'pylint-parseable'
 
             -
-                command: 'pylint-run ./pylint --rcfile=./pylint/.pylintrc > pylint-data'
+                command: 'pylint-run ./pylint/custom.py --rcfile=./pylint/.pylintrc > pylint-data'
                 analysis:
                      file: 'pylint-data'
                      format: 'pylint-parseable'
