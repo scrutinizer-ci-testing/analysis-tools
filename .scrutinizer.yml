@@ -9,7 +9,7 @@ build:
         python: 3.5.0
         ruby: 2.2.0
 
-    dependencies:   # installing plugins and dependencied
+    dependencies:   # installing plugins and dependencies
             after:
                 - npm install --prefix ~/.analysis/eslint eslint-config-standard
                 - npm install --prefix ~/.analysis/eslint eslint-plugin-promise
