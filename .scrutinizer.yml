@@ -20,60 +20,61 @@ build:
             -
                 command: 'eslint-run ./eslint/lib -c ./eslint/eslintrc.json > eslint-data'  #path required
                 analysis:
-                    file: 'eslint-data'                
-                    format: 'eslint-checkstyle'    
+                    file: 'eslint-data'
 
-            -
-                command: 'eslint-run ./eslint/lib -c ./eslint/eslintrc.json'   #path required
-                analysis:                
-                    format: 'eslint-checkstyle'
-
+            -   eslint-run ./eslint/lib -c ./eslint/eslintrc.json   #path required
+                
             -
                 command:   'shellcheck-run > shellcheck-data' 
                 analysis:
-                    file:   'shellcheck-data' 
-                    format: 'general-checkstyle'
-
-            -
-                command: 'phpcs-run ./phpcs'     #path required
-                analysis:                
-                    format: 'eslint-checkstyle'
-
+                    file:   'shellcheck-data'
+                  
+            -   phpcs-run ./phpcs     #path required
+            
             -
                 command: 'phpcs-run ./phpcs --standard=./phpcs/ruleset.xml > phpcs-data' #path required
                 analysis:
                     file: 'phpcs-data'           
-                    format: 'php-cs-checkstyle'
 
-            -
-                command: 'jshint-run ./jshint'
-                analysis:
-                    format: 'jshint-checkstyle'
-
+            -    jshint-run ./jshint
+              
             -
                 command: 'jshint-run ./jshint --reporter=./jshint/reporter.js > jshint-data'
                 analysis:
                     file: 'jshint-data'
-                    format: 'jshint-checkstyle'
 
-            -
-                command: 'pylint-run ./pylint/custom.py' # either project name or specfic file name
-                analysis:
-                     format: 'pylint-parseable'
+            -   pylint-run ./pylint/custom.py # either project name or specfic file name
+
 
             -
                 command: 'pylint-run ./pylint/custom.py --rcfile=./pylint/.pylintrc > pylint-data'
                 analysis:
-                     file: 'pylint-data'
-                     format: 'pylint-parseable'
+                    file: 'pylint-data'
 
-            -
-                command: 'rubocop-run ./rubocop'
-                analysis:
-                     format: 'rubocop-json'
+            -   rubocop-run ./rubocop
+           
 
             -
                 command: 'rubocop-run ./rubocop --config=./rubocop/.rubocop.yml > rubocop-data'
                 analysis:
-                     file: 'rubocop-data'
-                     format: 'rubocop-json'
+                    file: 'rubocop-data'
+
+            -   '( cd bundler-audit && bundle-audit-run )' #required Gemfile.lock in current directory
+
+            -   csslint-run ./csslint  #path required
+
+            -
+                command: 'csslint-run ./csslint --config=./csslint/.csslintrc > csslint-data'
+                analysis:
+                    file: 'csslint-data'
+
+            -   scss-lint-run ./scsslint
+
+            -
+                command: 'scsslint-run ./scsslint --config=./scsslint/.scss-lint.yml > scsslint-data'
+                analysis:
+                    file: 'scsslint-data'
+
+            -   '( cd scalastyle/commandline && scalastyle-run scalastyle/commandline )'
+
+            -   '( cd scalastyle/sbt && scalastyle-run )'
