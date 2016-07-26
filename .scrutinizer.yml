@@ -5,6 +5,7 @@ checks:
     #ruby: true
 build:
     environment:
+	java: 'java-8-oracle'
         node: v6.2.0
         python: 3.5.0
         ruby: 2.2.0
@@ -78,3 +79,9 @@ build:
             -   '( cd scalastyle/commandline && scalastyle-run scalastyle/commandline )'
 
             -   '( cd scalastyle/sbt && scalastyle-run )'
+
+            -
+                command: '(cd findbugs/ && mvn findbugs:findbugs)'
+                analysis:
+                    file: 'findbugs/target/findbugsXml.xml'
+                    format: 'findbugs-xml'
