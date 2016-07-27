@@ -72,34 +72,34 @@ build:
             -   scss-lint-run ./scsslint
 
             -
-                command: 'scsslint-run ./scsslint --config=./scsslint/.scss-lint.yml > scsslint-data'
+                command: 'scss-lint-run ./scsslint --config=./scsslint/.scss-lint.yml > scsslint-data'
                 analysis:
                     file: 'scsslint-data'
 
-            -   '( cd scalastyle/commandline && scalastyle-run scalastyle/commandline )'
+            -   ' cd scalastyle/commandline && scalastyle-run scalastyle/commandline '
 
-            -   '( cd scalastyle/sbt && scalastyle-run )'
+            -   ' cd scalastyle/sbt && scalastyle-run '
 
             -
-                command: '(cd java-analysistools-testing/ && mvn findbugs:findbugs)'
+                command: ' cd java-analysistools-testing/ && mvn findbugs:findbugs '
                 analysis:
                     file: 'java-analysistools-testing/target/findbugsXml.xml'
                     format: 'findbugs-xml'
 
             -
-                command: '(cd java-analysistools-testing/ && ant findbugs)'
+                command: ' cd java-analysistools-testing/ && ant findbugs '
                 analysis:
                     file: 'java-analysistools-testing/report/findbugs/findbugsXml.xml'
                     format: 'findbugs-xml'
 
             -
-                command: '(cd java-analysistools-testing/ && ant checkstyle)'
+                command: ' cd java-analysistools-testing/ && ant checkstyle '
                 analysis:
                     file: 'java-analysistools-testing/report/checkstyle/checkstyle-result.xml'
                     format: 'general-checkstyle'
 
             -
-                command: '(cd java-analysistools-testing/ && mvn checkstyle:checkstyle)'
+                command: ' cd java-analysistools-testing/ && mvn checkstyle:checkstyle '
                 analysis:
                     file: 'java-analysistools-testing/target/checkstyle-result.xml'
                     format: 'general-checkstyle'
