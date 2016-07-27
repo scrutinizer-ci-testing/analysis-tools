@@ -5,7 +5,7 @@ checks:
     #ruby: true
 build:
     environment:
-	java: 'java-8-oracle'
+        java: 'java-8-oracle'
         node: v6.2.0
         python: 3.5.0
         ruby: 2.2.0
@@ -81,7 +81,25 @@ build:
             -   '( cd scalastyle/sbt && scalastyle-run )'
 
             -
-                command: '(cd findbugs/ && mvn findbugs:findbugs)'
+                command: '(cd java-analysistools-testing/ && mvn findbugs:findbugs)'
                 analysis:
-                    file: 'findbugs/target/findbugsXml.xml'
+                    file: 'java-analysistools-testing/target/findbugsXml.xml'
                     format: 'findbugs-xml'
+
+            -
+                command: '(cd java-analysistools-testing/ && ant findbugs)'
+                analysis:
+                    file: 'java-analysistools-testing/report/findbugs/findbugsXml.xml'
+                    format: 'findbugs-xml'
+
+            -
+                command: '(cd java-analysistools-testing/ && ant checkstyle)'
+                analysis:
+                    file: 'java-analysistools-testing/report/checkstyle/checkstyle-result.xml'
+                    format: 'general-checkstyle'
+
+            -
+                command: '(cd java-analysistools-testing/ && mvn checkstyle:checkstyle)'
+                analysis:
+                    file: 'java-analysistools-testing/target/checkstyle-result.xml'
+                    format: 'general-checkstyle'
