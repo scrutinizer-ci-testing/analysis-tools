@@ -1,0 +1,64 @@
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.8'
+}
+
+apply plugin: 'java'
+apply plugin: 'checkstyle'
+apply plugin: "findbugs"
+
+findbugs {
+    toolVersion = "3.0.1"
+    //sourceSets = [sourceSets.main]
+    ignoreFailures = true
+    reportsDir = file("$project.rootDir/findbugsReports")
+    effort = "max"
+   
+    visitors = ["FindSqlInjection", "SwitchFallthrough"]
+    omitVisitors = ["FindNonShortCircuit"]
+    //includeFilter = file("$rootProject.projectDir/config/findbugs/includeFilter.xml")
+    //excludeFilter = file("$rootProject.projectDir/config/findbugs/excludeFilter.xml")
+    //excludeBugsFilter = file("$rootProject.projectDir/config/findbugs/excludeBugsFilter.xml")
+}
+
+sourceCompatibility = 1.7
+
+group = 'com.github.sevntu.checkstyle'
+version = '0.0.1-SNAPSHOT'
+
+checkstyle {
+
+  project.ext.checkstyleVersion = '7.0'
+  project.ext.sevntuChecksVersion = '1.21.0'
+
+  repositories {
+    mavenCentral()
+    maven {
+      url "http://sevntu-checkstyle.github.com/sevntu.checkstyle/maven2"
+    }
+  }
+
+  ignoreFailures = true
+  configFile = file("${project.rootDir}/checkstyle.xml")
+
+  //sourceSets = [sourceSets.main]
+  //showViolations = true
+  reportsDir = file("$project.rootDir/checkstyleReports")
+  //configProperties = ['baseDir': "$project.projectDir"]
+
+  //https://discuss.gradle.org/t/some-checkstyle-rules-dont-work-in-gradle/16102/4
+  checkstyleMain {
+    source = sourceSets.main.allSource
+  }
+
+  configurations {
+    checkstyle
+  }
+
+  dependencies{
+    assert project.hasProperty("checkstyleVersion")
+
+    checkstyle "com.puppycrawl.tools:checkstyle:${checkstyleVersion}"
+    checkstyle "com.github.sevntu.checkstyle:sevntu-checks:${sevntuChecksVersion}"
+  }
+}
+

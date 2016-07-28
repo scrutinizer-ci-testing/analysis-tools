@@ -1,0 +1,2 @@
+run checkstyle
+"./gradlew check" or "gradle check"

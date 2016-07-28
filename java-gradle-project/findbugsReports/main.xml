@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1469694530738" analysisTimestamp="1469694530758" release="">
+  <Project projectName="">
+    <Jar>/home/linglong/workspace/test-projects/java/checkstyle/checkstyle-samples/gradle-project/build/classes/main/com/github/sevntu/checkstyle/Sample.class</Jar>
+    <SrcDir>/home/linglong/workspace/test-projects/java/checkstyle/checkstyle-samples/gradle-project/src/main/java/com/github/sevntu/checkstyle/Sample.java</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 28 Jul 2016 10:28:50 +0200" total_classes="0" referenced_classes="9" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_66" vm_version="25.66-b17" cpu_seconds="2.54" clock_seconds="0.56" peak_mbytes="98.04" alloc_mbytes="3548.50" gc_seconds="0.01">
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="159" invocations="237" avgMicrosecondsPerInvocation="671" maxMicrosecondsPerInvocation="15695" standardDeviationMircosecondsPerInvocation="1444"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="61" invocations="9" avgMicrosecondsPerInvocation="6885" maxMicrosecondsPerInvocation="25138" standardDeviationMircosecondsPerInvocation="7901"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="42" invocations="206" avgMicrosecondsPerInvocation="203" maxMicrosecondsPerInvocation="12749" standardDeviationMircosecondsPerInvocation="908"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="39" invocations="33" avgMicrosecondsPerInvocation="1191" maxMicrosecondsPerInvocation="4063" standardDeviationMircosecondsPerInvocation="970"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

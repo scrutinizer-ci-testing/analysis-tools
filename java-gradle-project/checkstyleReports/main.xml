@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="7.0">
+<file name="/home/linglong/workspace/test-projects/java/checkstyle/checkstyle-samples/gradle-project/src/main/resources/messages.properties">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/home/linglong/workspace/test-projects/java/checkstyle/checkstyle-samples/gradle-project/src/main/resources/messages_de.properties">
+</file>
+<file name="/home/linglong/workspace/test-projects/java/checkstyle/checkstyle-samples/gradle-project/src/main/java/com/github/sevntu/checkstyle/Sample.java">
+<error line="6" column="17" severity="error" message="Method declares to return Boolean and returns null." source="com.github.sevntu.checkstyle.checks.coding.ReturnNullInsteadOfBooleanCheck"/>
+</file>
+</checkstyle>

@@ -1,0 +1,16 @@
+package com.github.sevntu.checkstyle;
+
+public class Sample {
+
+	public Boolean shouldBeWarning() {
+		return null;
+	}
+
+	String test= new String("test");
+	String test2= new Sring("test2");
+	
+	public Boolean useEqualonString() {
+		if (test == test2)
+		return true;
+	}
+}
