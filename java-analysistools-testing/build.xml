@@ -3,30 +3,34 @@
         Ant build sample for running 
         - findbugs, 
         - checkstyle, 
+	- pmd,
     </description>
 
      <!-- Change the paths to your individual installation directories -->
     <property name="checkstyle.home.dir" location="${basedir}/lib/checkstyle" />
     <property name="findbugs.home.dir" value="${basedir}/lib/findbugs-3.0.1" />
+    <property name="pmd.home.dir" value="${basedir}/lib/pmd-bin-5.5.0" />
     <property name="lib.dir" location="${basedir}/lib" />
     <property name="src.dir" location="${basedir}/src" />
     <property name="report.dir" location="${basedir}/report" />
 
     <property name="report.checkstyle.dir" location="${report.dir}/checkstyle" />
     <property name="report.findbugs.dir" location="${report.dir}/findbugs" />
+    <property name="report.pmd.dir" location="${report.dir}/pmd" />
    
     <path id="run.classpath">
         <pathelement path="${bin.dir}" />
         <pathelement path="${basedir}/lib/junit-4.5.jar" />
     </path>
 
-    <!-- -->
+    <!-- clean report dir -->
     <target name="clean" description="Delete all result to start with a clean build.">
         <delete dir="${report.findbugs.dir}" />
         <delete dir="${report.checkstyle.dir}" />
+	<delete dir="${report.pmd.dir}" />
     </target>
 
-    <!-- -->
+    <!-- findbugs -->
     <target name="findbugs"    
             description="Running findbugs."
     >
@@ -54,7 +58,7 @@
         </findbugs>
     </target>
 
-    <!-- -->
+    <!-- checkstyle -->
     <target name="checkstyle" 
         description="Generate a report of code convention violations.">
         <taskdef resource="com/puppycrawl/tools/checkstyle/ant/checkstyle-ant-task.properties"
@@ -80,13 +84,32 @@
         </checkstyle>
     </target>
 
+    <!-- pmd -->
+    <path id="pmd2.classpath">
+        <pathelement location="${build}" />
+        <fileset dir="${pmd.home.dir}/lib/">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+    <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask" 
+        classpathref="pmd2.classpath" />
+    <target name="pmd">
+        <mkdir dir="${report.pmd.dir}" />
+        <pmd rulesetfiles="java-typeresolution">
+            <formatter type="xml" toFile="${report.pmd.dir}/pmd-result.xml" />
+            <fileset dir="${src.dir}">
+                <include name="**/*.java" />
+            </fileset>
+        </pmd>
+    </target>
 
     <!-- -->
     <target name="run"
             description="Run the build"
             depends="clean, 
                 checkstyle, 
-                findbugs"
+                findbugs,
+		pmd"
     >
     </target>
 

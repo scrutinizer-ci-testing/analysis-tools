@@ -202,6 +202,19 @@
                 </configuration>
             </plugin>
 
+	    <!-- PMD -->
+	    <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+		<version>3.6</version>
+                <configuration>
+		    <targetDirectory>target/pmd</targetDirectory>
+                    <rulesets>
+                        <ruleset>java-typeresolution</ruleset>
+                    </rulesets>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 

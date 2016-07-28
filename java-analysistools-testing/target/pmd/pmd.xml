@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.3.5" timestamp="2016-07-28T15:43:09.422">
+<file name="/home/linglong/workspace/test-projects/java/java-analysistools-testing/src/main/java/com/metamx/common/CompressionUtils.java">
+<violation beginline="25" endline="25" begincolumn="1" endcolumn="44" rule="UnusedImports" ruleset="Type Resolution" package="com.metamx.common" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#UnusedImports" priority="4">
+Avoid unused imports such as 'com.metamx.common.guava.CloseQuietly'
+</violation>
+<violation beginline="136" endline="136" begincolumn="61" endcolumn="69" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common" class="CompressionUtils" method="call" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="136" endline="136" begincolumn="61" endcolumn="69" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common" class="CompressionUtils" method="call" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+</file>
+<file name="/home/linglong/workspace/test-projects/java/java-analysistools-testing/src/main/java/com/metamx/common/JodaUtils.java">
+<violation beginline="35" endline="35" begincolumn="17" endcolumn="35" rule="LooseCoupling" ruleset="Type Resolution" package="com.metamx.common" class="JodaUtils" method="condenseIntervals" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#LooseCoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+</file>
+<file name="/home/linglong/workspace/test-projects/java/java-analysistools-testing/src/main/java/com/metamx/common/RetryUtils.java">
+<violation beginline="53" endline="53" begincolumn="12" endcolumn="20" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common" class="RetryUtils" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="76" endline="76" begincolumn="111" endcolumn="119" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common" class="RetryUtils" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+</file>
+<file name="/home/linglong/workspace/test-projects/java/java-analysistools-testing/src/main/java/com/metamx/common/StreamUtils.java">
+<violation beginline="24" endline="24" begincolumn="1" endcolumn="44" rule="UnusedImports" ruleset="Type Resolution" package="com.metamx.common" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#UnusedImports" priority="4">
+Avoid unused imports such as 'com.metamx.common.guava.CloseQuietly'
+</violation>
+<violation beginline="168" endline="168" begincolumn="39" endcolumn="47" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common" class="StreamUtils" method="call" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="168" endline="168" begincolumn="39" endcolumn="47" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common" class="StreamUtils" method="call" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+</file>
+<file name="/home/linglong/workspace/test-projects/java/java-analysistools-testing/src/main/java/com/metamx/common/Timing.java">
+<violation beginline="35" endline="35" begincolumn="113" endcolumn="121" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common" class="Timing" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+</file>
+<file name="/home/linglong/workspace/test-projects/java/java-analysistools-testing/src/main/java/com/metamx/common/collect/CountingMap.java">
+<violation beginline="31" endline="31" begincolumn="17" endcolumn="38" rule="LooseCoupling" ruleset="Type Resolution" package="com.metamx.common.collect" class="CountingMap" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#LooseCoupling" priority="3">
+Avoid using implementation types like 'HashMap'; use the interface instead
+</violation>
+</file>
+<file name="/home/linglong/workspace/test-projects/java/java-analysistools-testing/src/main/java/com/metamx/common/concurrent/ExecutorServices.java">
+<violation beginline="46" endline="46" begincolumn="40" endcolumn="48" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.concurrent" class="ExecutorServices" method="start" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="46" endline="46" begincolumn="40" endcolumn="48" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.concurrent" class="ExecutorServices" method="start" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+</file>
+<file name="/home/linglong/workspace/test-projects/java/java-analysistools-testing/src/main/java/com/metamx/common/concurrent/ScheduledExecutors.java">
+<violation beginline="138" endline="138" begincolumn="35" endcolumn="43" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.concurrent" class="ScheduledExecutors" method="call" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="138" endline="138" begincolumn="35" endcolumn="43" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.concurrent" class="ScheduledExecutors" method="call" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+</file>
+<file name="/home/linglong/workspace/test-projects/java/java-analysistools-testing/src/main/java/com/metamx/common/guava/BaseSequence.java">
+<violation beginline="20" endline="20" begincolumn="1" endcolumn="39" rule="UnusedImports" ruleset="Type Resolution" package="com.metamx.common.guava" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#UnusedImports" priority="4">
+Avoid unused imports such as 'com.google.common.io.Closeables'
+</violation>
+</file>
+<file name="/home/linglong/workspace/test-projects/java/java-analysistools-testing/src/main/java/com/metamx/common/guava/ConcatSequence.java">
+<violation beginline="20" endline="20" begincolumn="1" endcolumn="39" rule="UnusedImports" ruleset="Type Resolution" package="com.metamx.common.guava" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#UnusedImports" priority="4">
+Avoid unused imports such as 'com.google.common.io.Closeables'
+</violation>
+</file>
+<file name="/home/linglong/workspace/test-projects/java/java-analysistools-testing/src/main/java/com/metamx/common/guava/ExecutorExecutingSequence.java">
+<violation beginline="50" endline="50" begincolumn="40" endcolumn="48" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.guava" class="ExecutorExecutingSequence" method="call" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="50" endline="50" begincolumn="40" endcolumn="48" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.guava" class="ExecutorExecutingSequence" method="call" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="74" endline="74" begincolumn="49" endcolumn="57" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.guava" class="ExecutorExecutingSequence" method="call" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="74" endline="74" begincolumn="49" endcolumn="57" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.guava" class="ExecutorExecutingSequence" method="call" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="108" endline="108" begincolumn="53" endcolumn="61" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.guava" class="ExecutorExecutingSequence" method="call" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="108" endline="108" begincolumn="53" endcolumn="61" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.guava" class="ExecutorExecutingSequence" method="call" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="108" endline="108" begincolumn="53" endcolumn="61" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.guava" class="ExecutorExecutingSequence" method="call" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+</file>
+<file name="/home/linglong/workspace/test-projects/java/java-analysistools-testing/src/main/java/com/metamx/common/guava/YieldingSequenceBase.java">
+<violation beginline="19" endline="19" begincolumn="1" endcolumn="41" rule="UnusedImports" ruleset="Type Resolution" package="com.metamx.common.guava" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#UnusedImports" priority="4">
+Avoid unused imports such as 'com.google.common.base.Throwables'
+</violation>
+<violation beginline="20" endline="20" begincolumn="1" endcolumn="39" rule="UnusedImports" ruleset="Type Resolution" package="com.metamx.common.guava" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#UnusedImports" priority="4">
+Avoid unused imports such as 'com.google.common.io.Closeables'
+</violation>
+<violation beginline="22" endline="22" begincolumn="1" endcolumn="27" rule="UnusedImports" ruleset="Type Resolution" package="com.metamx.common.guava" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.io.IOException'
+</violation>
+</file>
+<file name="/home/linglong/workspace/test-projects/java/java-analysistools-testing/src/main/java/com/metamx/common/lifecycle/Lifecycle.java">
+<violation beginline="168" endline="168" begincolumn="57" endcolumn="65" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.lifecycle" class="Lifecycle" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="183" endline="183" begincolumn="70" endcolumn="78" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.lifecycle" class="Lifecycle" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="197" endline="197" begincolumn="60" endcolumn="68" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.lifecycle" class="Lifecycle" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="212" endline="212" begincolumn="73" endcolumn="81" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.lifecycle" class="Lifecycle" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="225" endline="225" begincolumn="60" endcolumn="68" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.lifecycle" class="Lifecycle" method="addMaybeStartHandler" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="238" endline="238" begincolumn="73" endcolumn="81" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.lifecycle" class="Lifecycle" method="addMaybeStartHandler" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="250" endline="250" begincolumn="30" endcolumn="38" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.lifecycle" class="Lifecycle" method="start" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="328" endline="328" begincolumn="32" endcolumn="40" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.lifecycle" class="Lifecycle$Handler" method="start" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="345" endline="345" begincolumn="32" endcolumn="40" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.lifecycle" class="Lifecycle$AnnotationBasedHandler" method="start" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="399" endline="399" begincolumn="32" endcolumn="40" rule="SignatureDeclareThrowsException" ruleset="Type Resolution" package="com.metamx.common.lifecycle" class="Lifecycle$StartCloseHandler" method="start" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+</file>
+<file name="/home/linglong/workspace/test-projects/java/java-analysistools-testing/src/main/java/com/metamx/common/parsers/CSVParser.java">
+<violation beginline="42" endline="42" begincolumn="11" endcolumn="27" rule="LooseCoupling" ruleset="Type Resolution" package="com.metamx.common.parsers" class="CSVParser" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#LooseCoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+</file>
+<file name="/home/linglong/workspace/test-projects/java/java-analysistools-testing/src/main/java/com/metamx/common/parsers/DelimitedParser.java">
+<violation beginline="23" endline="23" begincolumn="1" endcolumn="41" rule="UnusedImports" ruleset="Type Resolution" package="com.metamx.common.parsers" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#UnusedImports" priority="4">
+Avoid unused imports such as 'com.google.common.base.Throwables'
+</violation>
+<violation beginline="46" endline="46" begincolumn="11" endcolumn="27" rule="LooseCoupling" ruleset="Type Resolution" package="com.metamx.common.parsers" class="DelimitedParser" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#LooseCoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+</file>
+<file name="/home/linglong/workspace/test-projects/java/java-analysistools-testing/src/main/java/com/metamx/common/parsers/JSONParser.java">
+<violation beginline="69" endline="69" begincolumn="11" endcolumn="27" rule="LooseCoupling" ruleset="Type Resolution" package="com.metamx.common.parsers" class="JSONParser" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#LooseCoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+</file>
+<file name="/home/linglong/workspace/test-projects/java/java-analysistools-testing/src/main/java/com/metamx/common/parsers/JSONToLowerParser.java">
+<violation beginline="46" endline="46" begincolumn="11" endcolumn="27" rule="LooseCoupling" ruleset="Type Resolution" package="com.metamx.common.parsers" class="JSONToLowerParser" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#LooseCoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+</file>
+<file name="/home/linglong/workspace/test-projects/java/java-analysistools-testing/src/main/java/com/metamx/common/parsers/Parser.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="21" rule="UnusedImports" ruleset="Type Resolution" package="com.metamx.common.parsers" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.util.Set'
+</violation>
+</file>
+<file name="/home/linglong/workspace/test-projects/java/java-analysistools-testing/src/main/java/com/metamx/common/parsers/ParserUtils.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="29" rule="UnusedImports" ruleset="Type Resolution" package="com.metamx.common.parsers" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#UnusedImports" priority="4">
+Avoid unused imports such as 'com.metamx.common.IAE'
+</violation>
+<violation beginline="25" endline="25" begincolumn="1" endcolumn="26" rule="UnusedImports" ruleset="Type Resolution" package="com.metamx.common.parsers" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.util.Iterator'
+</violation>
+<violation beginline="42" endline="42" begincolumn="17" endcolumn="33" rule="LooseCoupling" ruleset="Type Resolution" package="com.metamx.common.parsers" class="ParserUtils" method="generateFieldNames" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#LooseCoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+</file>
+<file name="/home/linglong/workspace/test-projects/java/java-analysistools-testing/src/main/java/com/metamx/common/parsers/ToLowerCaseParser.java">
+<violation beginline="20" endline="20" begincolumn="1" endcolumn="29" rule="UnusedImports" ruleset="Type Resolution" package="com.metamx.common.parsers" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/typeresolution.html#UnusedImports" priority="4">
+Avoid unused imports such as 'com.metamx.common.IAE'
+</violation>
+</file>
+</pmd>

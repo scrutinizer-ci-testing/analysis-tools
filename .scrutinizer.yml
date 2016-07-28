@@ -103,3 +103,15 @@ build:
                 analysis:
                     file: 'java-analysistools-testing/target/checkstyle-result.xml'
                     format: 'general-checkstyle'
+
+            -
+                command: ' cd java-analysistools-testing/ && mvn pmd:pmd '
+                analysis:
+                    file: 'java-analysistools-testing/target/pmd/pmd.xml'
+                    format: 'pmd-xml'
+
+            -
+                command: ' cd java-analysistools-testing/ && ant pmd '
+                analysis:
+                    file: 'java-analysistools-testing/report/pmd/pmd-result.xml'
+                    format: 'pmd-xml'
