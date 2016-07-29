@@ -74,7 +74,7 @@ build:
                 analysis:
                     file: 'scsslint-data'
             
-            -   cd ~/build/scalastyle/commandline && scalastyle-run ./
+            -   cd ~/build/scalastyle/commandline && scalastyle-run .
 
             -   cd ~/build/scalastyle/sbt && scalastyle-run
             
