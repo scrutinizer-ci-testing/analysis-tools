@@ -60,8 +60,6 @@ build:
                 analysis:
                     file: 'rubocop-data'
 
-            -   ' cd ~/build/bundler-audit && bundle-audit-run ' #required Gemfile.lock in current directory
-
             -   csslint-run ./csslint  #path required
 
             -
@@ -76,6 +74,8 @@ build:
                 analysis:
                     file: 'scsslint-data'
 
+            -   ' cd ~/build/bundler-audit && bundle-audit-run ' #required Gemfile.lock in current directory
+            
             -   ' cd ~/build/scalastyle/commandline && scalastyle-run ./ '
 
             -   ' cd ~/build/scalastyle/sbt && scalastyle-run '
