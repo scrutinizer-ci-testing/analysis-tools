@@ -1,4 +1,4 @@
-(scalastyleConfig in Test) := file("scalastyle_config.xml")
+(scalastyleConfig in Test) := file("asdfas_config.xml")
 
 version := "0.1"
  
