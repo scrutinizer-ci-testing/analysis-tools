@@ -74,11 +74,11 @@ build:
                 analysis:
                     file: 'scsslint-data'
 
-            -   ' cd ~/build/bundler-audit && bundle-audit-run ' #required Gemfile.lock in current directory
+            -   cd ~/build/bundler-audit && bundle-audit-run #required Gemfile.lock in current directory
             
-            -   ' cd ~/build/scalastyle/commandline && scalastyle-run ./ '
+            -   cd ~/build/scalastyle/commandline && scalastyle-run ./
 
-            -   ' cd ~/build/scalastyle/sbt && scalastyle-run '
+            -   cd ~/build/scalastyle/sbt && scalastyle-run
 
             -
                 command: ' cd ~/build/java-analysistools-testing/ && mvn findbugs:findbugs '
