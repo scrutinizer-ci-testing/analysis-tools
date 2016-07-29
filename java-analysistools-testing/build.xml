@@ -14,6 +14,10 @@
     <property name="src.dir" location="${basedir}/src" />
     <property name="report.dir" location="${basedir}/report" />
 
+    <property name="config.checkstyle.dir" location="${basedir}/checkstyle-config" />
+    <property name="config.findbugs.dir" location="${basedir}/findbugs-config" />
+    <property name="config.pmd.dir" location="${basedir}/pmd-config" />
+
     <property name="report.checkstyle.dir" location="${report.dir}/checkstyle" />
     <property name="report.findbugs.dir" location="${report.dir}/findbugs" />
     <property name="report.pmd.dir" location="${report.dir}/pmd" />
@@ -75,7 +79,7 @@
         <mkdir dir="${report.checkstyle.dir}" />
 
         <!-- run analysis-->
-        <checkstyle config="${basedir}/checkstyle-config/sun_checks.xml"
+        <checkstyle config="${config.checkstyle.dir}/sun_checks.xml"
                     failureProperty="checkstyle.failure"
                     failOnViolation="false"
         >
@@ -95,7 +99,7 @@
         classpathref="pmd2.classpath" />
     <target name="pmd">
         <mkdir dir="${report.pmd.dir}" />
-        <pmd rulesetfiles="java-typeresolution">
+        <pmd rulesetfiles="${config.pmd.dir}/ruleset.xml">
             <formatter type="xml" toFile="${report.pmd.dir}/pmd-result.xml" />
             <fileset dir="${src.dir}">
                 <include name="**/*.java" />

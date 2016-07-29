@@ -210,7 +210,7 @@
                 <configuration>
 		    <targetDirectory>target/pmd</targetDirectory>
                     <rulesets>
-                        <ruleset>java-typeresolution</ruleset>
+                        <ruleset>pmd-config/ruleset.xml</ruleset>
                     </rulesets>
                 </configuration>
             </plugin>
