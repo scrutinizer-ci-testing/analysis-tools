@@ -1,2 +1,2 @@
---errors=important, box-model, display-property-grouping, duplicate-properties, empty-rules, known-properties
+--errors=important,box-model,display-property-grouping,duplicate-properties,empty-rules,known-properties
 --warnings=import
