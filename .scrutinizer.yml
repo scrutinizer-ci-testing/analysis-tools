@@ -10,11 +10,19 @@ build:
         python: 3.5.0
         ruby: 2.2.0
 
-    dependencies:   # installing plugins and dependencies
-            after:
-                - npm install --prefix ~/.analysis/eslint eslint-config-standard
-                - npm install --prefix ~/.analysis/eslint eslint-plugin-promise
-                - npm install --prefix ~/.analysis/eslint eslint-plugin-standard
+    dependencies:    
+            after:    # install plugins and dependencies, to support extend configuration in .eslintrc.json file.
+                - 
+                    command: npm install --prefix ~/.analysis/eslint eslint-config-standard
+                    not_if: test -e ~/.analysis/eslint/node_modules/eslint-config-standard
+                    
+                - 
+                    command: npm install --prefix ~/.analysis/eslint eslint-plugin-promise
+                    not_if: test -e ~/.analysis/eslint/node_modules/eslint-plugin-promise
+                    
+                - 
+                    command: npm install --prefix ~/.analysis/eslint eslint-plugin-standard
+                    not_if: test -e ~/.analysis/eslint/node_modules/eslint-plugin-standard
 
     tests:
         override:
